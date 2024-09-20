@@ -1,4 +1,5 @@
-const backendDomin = "https://ashish-e-comm-2-backend.onrender.com"
+const backendDomin = "https://ashish-e-comm-2-backend.vercel.app"
+// const backendDomin = "http://localhost:5000"
 
 const SummaryApi = {
     signUP : {

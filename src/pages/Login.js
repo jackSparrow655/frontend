@@ -47,11 +47,11 @@ const Login = () => {
             console.log(dataApi.userId)
             localStorage.setItem("userId", dataApi.userId)
             localStorage.setItem("token", dataApi.data)
-            const token = dataApi.data
-            document.cookie = `token=${token}; path=/; max-age=3600; secure; samesite=Lax`;
-            navigate('/')
+            // const token = dataApi.data
             fetchUserDetails()
             fetchUserAddToCart()
+            navigate('/')
+            window.location.reload()
         }
 
         if(dataApi.error){

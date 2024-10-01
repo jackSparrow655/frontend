@@ -35,6 +35,7 @@ const Header = () => {
       toast.success(data.message)
       dispatch(setUserDetails(null))
       localStorage.removeItem("userId")
+      localStorage.removeItem("token")
       navigate("/")
     }
 

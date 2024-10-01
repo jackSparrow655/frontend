@@ -1,6 +1,6 @@
-const backendDomin = "https://ashish-e-comm-2-backend.vercel.app"
-// const backendDomin = "http://localhost:5000"
-
+// const backendDomin = "https://ashish-e-comm-2-backend.vercel.app"
+const backendDomin = "http://localhost:5000"
+const token = localStorage.getItem("token")
 const SummaryApi = {
     signUP : {
         url : `${backendDomin}/api/signup`,
@@ -11,23 +11,23 @@ const SummaryApi = {
         method : "post"
     },
     current_user : {
-        url : `${backendDomin}/api/user-details`,
+        url : `${backendDomin}/api/user-details?token=${token}`,
         method : "get"
     },
     logout_user : {
-        url : `${backendDomin}/api/userLogout`,
+        url : `${backendDomin}/api/userLogout?token=${token}`,
         method : 'get'
     },
     allUser : {
-        url : `${backendDomin}/api/all-user`,
+        url : `${backendDomin}/api/all-user?token=${token}`,
         method : 'get'
     },
     updateUser : {
-        url : `${backendDomin}/api/update-user`,
+        url : `${backendDomin}/api/update-user?token=${token}`,
         method : "post"
     },
     uploadProduct : {
-        url : `${backendDomin}/api/upload-product`,
+        url : `${backendDomin}/api/upload-product?token=${token}`,
         method : 'post'
     },
     allProduct : {
@@ -35,39 +35,39 @@ const SummaryApi = {
         method : 'get'
     },
     updateProduct : {
-        url : `${backendDomin}/api/update-product`,
+        url : `${backendDomin}/api/update-product?token=${token}`,
         method  : 'post'
     },
     categoryProduct : {
-        url : `${backendDomin}/api/get-categoryProduct`,
+        url : `${backendDomin}/api/get-categoryProduct?token=${token}`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `${backendDomin}/api/category-product`,
+        url : `${backendDomin}/api/category-product?token=${token}`,
         method : 'post'
     },
     productDetails : {
-        url : `${backendDomin}/api/product-details`,
+        url : `${backendDomin}/api/product-details?token=${token}`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `${backendDomin}/api/addtocart`,
+        url : `${backendDomin}/api/addtocart?token=${token}`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `${backendDomin}/api/countAddToCartProduct`,
+        url : `${backendDomin}/api/countAddToCartProduct?token=${token}`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `${backendDomin}/api/view-card-product`,
+        url : `${backendDomin}/api/view-card-product?token=${token}`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `${backendDomin}/api/update-cart-product`,
+        url : `${backendDomin}/api/update-cart-product?token=${token}`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `${backendDomin}/api/delete-cart-product`,
+        url : `${backendDomin}/api/delete-cart-product?token=${token}`,
         method : 'post'
     },
     searchProduct : {
@@ -83,15 +83,15 @@ const SummaryApi = {
         method : 'post'
     },
     userOrder:{
-        url : `${backendDomin}/api/user-order`,
+        url : `${backendDomin}/api/user-order?token=${token}`,
         method: 'get'
     },
     allOrder:{
-        url : `${backendDomin}/api/all-order`,
+        url : `${backendDomin}/api/all-order?token=${token}`,
         method: 'get'
     },
     orderStatus:{
-        url:`${backendDomin}/api/change-status`,
+        url:`${backendDomin}/api/change-status?token=${token}`,
         method: 'post'
     },
     getKey:{

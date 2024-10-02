@@ -36,6 +36,7 @@ const Header = () => {
       dispatch(setUserDetails(null))
       localStorage.removeItem("userId")
       localStorage.removeItem("token")
+      window.location.reload()
       navigate("/")
     }
 

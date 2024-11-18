@@ -93,7 +93,7 @@ const AllOrder = () => {
                                                                 }
                                                             </div>
                                                             <div className="flex items-center gap-5 mt-1">
-                                                                <div className="text-lg text-red-300">
+                                                                <div className="text-lg text-green-300">
                                                                     {displayINRCurrency(
                                                                         product
                                                                             .productId
@@ -127,7 +127,7 @@ const AllOrder = () => {
                                                     <option value="OUT FOR DELIVERY">OUT FOR DELEVERY</option>
                                                     <option value="DELIVERED">DELIVERD</option>
                                                 </select>
-                                                <button className="h-[30px] w-[100px] border border-black bg-red-600 text-white font-bold hover:scale-90 transition-all duration-200 rounded-md mx-10" onClick={() =>{
+                                                <button className="h-[30px] w-[100px] border border-black bg-green-600 text-white font-bold hover:scale-90 transition-all duration-200 rounded-md mx-10" onClick={() =>{
                                                     changeStatusHandler(item)
                                                 }}>change</button>
                                         </div>

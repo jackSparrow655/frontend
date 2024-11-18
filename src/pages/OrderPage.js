@@ -54,7 +54,7 @@ console.log(data);
                                         <div>
                                           <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.productId.productName}</div>
                                           <div className='flex items-center gap-5 mt-1'>
-                                            <div className='text-lg text-red-500'>{displayINRCurrency(product.productId.sellingPrice)}</div>
+                                            <div className='text-lg text-green-500'>{displayINRCurrency(product.productId.sellingPrice)}</div>
                                             <p>Quantity : {product.quantity}</p>
                                           </div>
                                         </div>

@@ -164,20 +164,20 @@
 //                                 </div>
 //                                 <div className='px-4 py-2 relative'>
 //                                     {/**delete product */}
-//                                     <div className='absolute right-0 text-red-600 rounded-full p-2 hover:bg-red-600 hover:text-white cursor-pointer' onClick={()=>deleteCartProduct(product?._id)}>
+//                                     <div className='absolute right-0 text-green-600 rounded-full p-2 hover:bg-green-600 hover:text-white cursor-pointer' onClick={()=>deleteCartProduct(product?._id)}>
 //                                         <MdDelete/>
 //                                     </div>
 
 //                                     <h2 className='text-lg lg:text-xl text-ellipsis line-clamp-1'>{product?.productId?.productName}</h2>
 //                                     <p className='capitalize text-slate-500'>{product?.productId.category}</p>
 //                                     <div className='flex items-center justify-between'>
-//                                             <p className='text-red-600 font-medium text-lg'>{displayINRCurrency(product?.productId?.sellingPrice)}</p>
+//                                             <p className='text-green-600 font-medium text-lg'>{displayINRCurrency(product?.productId?.sellingPrice)}</p>
 //                                             <p className='text-slate-600 font-semibold text-lg'>{displayINRCurrency(product?.productId?.sellingPrice  * product?.quantity)}</p>
 //                                     </div>
 //                                     <div className='flex items-center gap-3 mt-1'>
-//                                         <button className='border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>decraseQty(product?._id,product?.quantity)}>-</button>
+//                                         <button className='border border-green-600 text-green-600 hover:bg-green-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>decraseQty(product?._id,product?.quantity)}>-</button>
 //                                         <span>{product?.quantity}</span>
-//                                         <button className='border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>increaseQty(product?._id,product?.quantity)}>+</button>
+//                                         <button className='border border-green-600 text-green-600 hover:bg-green-600 hover:text-white w-6 h-6 flex justify-center items-center rounded ' onClick={()=>increaseQty(product?._id,product?.quantity)}>+</button>
 //                                     </div>
 //                                 </div>
 //                             </div>
@@ -198,7 +198,7 @@
 //                             </div>
 //                             ) : (
 //                                 <div className='h-36 bg-white'>
-//                                     <h2 className='text-white bg-red-600 px-4 py-1'>Summary</h2>
+//                                     <h2 className='text-white bg-green-600 px-4 py-1'>Summary</h2>
 //                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
 //                                         <p>Quantity</p>
 //                                         <p>{totalQty}</p>
@@ -435,7 +435,7 @@ const Cart = () => {
                 address: "Razorpay Corporate Office",
             },
             theme: {
-                color: "#FF0000",
+                color: "#0B6623",
             },
         };
         const razor = new window.Razorpay(options);
@@ -485,7 +485,7 @@ const Cart = () => {
                                   </div>
                                   <div className="px-4 py-2 relative">
                                       <div
-                                          className="absolute right-0 text-red-600 rounded-full p-2 hover:bg-red-600 hover:text-white cursor-pointer"
+                                          className="absolute right-0 text-green-600 rounded-full p-2 hover:bg-green-600 hover:text-white cursor-pointer"
                                           onClick={() =>
                                               deleteCartProduct(product?._id)
                                           }
@@ -499,7 +499,7 @@ const Cart = () => {
                                           {product?.productId?.category}
                                       </p>
                                       <div className="flex items-center justify-between">
-                                          <p className="text-red-600 font-medium text-lg">
+                                          <p className="text-green-600 font-medium text-lg">
                                               {displayINRCurrency(
                                                   product?.productId
                                                       ?.sellingPrice
@@ -515,7 +515,7 @@ const Cart = () => {
                                       </div>
                                       <div className="flex items-center gap-3 mt-1">
                                           <button
-                                              className="border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded"
+                                              className="border border-green-600 text-green-600 hover:bg-green-600 hover:text-white w-6 h-6 flex justify-center items-center rounded"
                                               onClick={() =>
                                                   decreaseQty(
                                                       product?._id,
@@ -527,7 +527,7 @@ const Cart = () => {
                                           </button>
                                           <span>{product?.quantity}</span>
                                           <button
-                                              className="border border-red-600 text-red-600 hover:bg-red-600 hover:text-white w-6 h-6 flex justify-center items-center rounded"
+                                              className="border border-green-600 text-green-600 hover:bg-green-600 hover:text-white w-6 h-6 flex justify-center items-center rounded"
                                               onClick={() =>
                                                   increaseQty(
                                                       product?._id,
@@ -555,7 +555,7 @@ const Cart = () => {
                                         onAddressChange={handleAddressChange}
                                     />
                                 </div>
-                                <h2 className="text-white bg-red-600 px-4 py-1">
+                                <h2 className="text-white bg-green-600 px-4 py-1">
                                     Summary
                                 </h2>
                                 <div className="flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600">

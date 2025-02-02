@@ -61,7 +61,7 @@ const Header = () => {
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             
             <Link to='/'>
-              <div className='font-bold text-3xl text-green-500'>
+              <div className='font-bold text-3xl text-green-500 rounded-full border px-5 py-1'>
                 instaCart
               </div>
             </Link>
